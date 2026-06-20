@@ -1,7 +1,7 @@
 # LEBMOK25571_PT02508_B_Lebogang-Mokoena_DJS04
-# Podwave — DJS04 React Podcast App
+# Podwave : DJS04 React Podcast App
 
-**Project:** DJS04 — Filtering, Sorting, Searching & Pagination
+**Project:** DJS04 : Filtering, Sorting, Searching & Pagination
 
 ---
 
@@ -9,7 +9,7 @@
 
 Podwave is an advanced podcast browsing experience built with React and Vite.
 It fetches a live catalogue of podcast shows from the CodeSpace API and allows
-users to search, sort, filter by genre, and paginate through results — all in
+users to search, sort,filter by genre, and paginate through results — all in
 real time, with all controls kept fully synchronised through a central context.
 
 DJS04 extends the DJS03 landing page with a Context API state layer, four
@@ -37,15 +37,15 @@ Requires Node 18+.
 ## Features
 
 ### Search (P3.53–P3.55)
-- Live filtering on every keystroke — matches any substring of the podcast title
+- Live filtering on every keystroke , matches any substring of the podcast title
 - Case-insensitive; no full title required
 - A ✕ clear button resets only the query, leaving genre and sort unchanged
 - Results update immediately without resetting pagination or filters
 
 ### Sorting (P3.56–P3.58)
-- **Newest first** — sorted by `updated` ISO date, descending
-- **Title A–Z** — locale-aware alphabetical
-- **Title Z–A** — reverse alphabetical
+- **Newest first**, sorted by `updated` ISO date, descending
+- **Title A–Z**,locale-aware alphabetical
+- **Title Z–A**,reverse alphabetical
 - Applied after genre and search filters, without resetting them
 
 ### Genre Filter (P3.59–P3.61)
@@ -62,7 +62,7 @@ Requires Node 18+.
 - Live summary: "Page X of Y — Z results"
 
 ### State Synchronisation (P3.66–P3.69)
-- All state lives in `PodcastContext` — one source of truth
+- All state lives in `PodcastContext ,one source of truth
 - Any combination of search + genre + sort + page produces a consistent result
 - User selections persist immediately and survive page navigation
 - Context is lifted above all controls; components only read and write via hooks
