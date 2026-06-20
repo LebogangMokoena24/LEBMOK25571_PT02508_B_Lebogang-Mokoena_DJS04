@@ -1,1 +1,53 @@
+.genre-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 160px;
+}
 
+.genre-filter__label {
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.genre-filter__select-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.genre-filter__select {
+  width: 100%;
+  background: var(--bg-control);
+  border: 1px solid var(--border-control);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 2.2rem 0.65rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.genre-filter__select:focus {
+  outline: none;
+  border-color: var(--border-accent);
+  box-shadow: 0 0 0 3px var(--accent-dim);
+}
+
+.genre-filter__select option {
+  background: #1e1e22;
+  color: var(--text-primary);
+}
+
+.genre-filter__chevron {
+  position: absolute;
+  right: 0.75rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
